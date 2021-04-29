@@ -1,2 +1,1 @@
-# various
-Repository with various small useful or interesting developments
+A repository with various small useful or interesting developments
