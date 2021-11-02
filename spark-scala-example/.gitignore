@@ -1,0 +1,10 @@
+.idea
+.bsp
+
+src/main/resources/
+project/
+target/
+spark-warehouse/
+output/
+
+/worksheet.sc
