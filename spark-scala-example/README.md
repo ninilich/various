@@ -1,5 +1,3 @@
-# Capstone project
-
 ## Introduction
 
 BigData Tasks: Marketing Analytics
