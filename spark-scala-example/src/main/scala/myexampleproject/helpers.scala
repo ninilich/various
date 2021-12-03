@@ -1,36 +1,18 @@
-package myсapstoneproject
+package myexampleproject
+/*
+  This file contains a helpers
+ */
 
 import org.apache.spark.sql.catalyst.encoders.ExpressionEncoder
 import org.apache.spark.sql.expressions.{Aggregator, Window}
 import org.apache.spark.sql.functions.{concat, countDistinct, element_at, from_json, lit, max, rank, sum, when}
-import org.apache.spark.sql.types.{BooleanType, DataType, DoubleType, MapType, StringType, StructType, TimestampType}
+import org.apache.spark.sql.types.{DataType, MapType, StringType}
 import org.apache.spark.sql.{Column, DataFrame, Encoder, SparkSession}
 
-/**
- * Provides  functions, which contains the main logic for project
- * For more information - see description below for each function
- */
-object Helpers {
-  /**
-   * Schema for data-file with purchases
-   */
-  val purchasesSchema = new StructType()
-    .add("purchaseId", StringType, true)
-    .add("purchaseTime", TimestampType, true)
-    .add("billingCost", DoubleType, true)
-    .add("isConfirmed", BooleanType, true)
+object helpers {
 
-  /**
-   * Schema for data-file with clicks
-   */
-  val clicksSchema = new StructType()
-    .add("userId", StringType, true)
-    .add("eventId", StringType, true)
-    .add("eventType", StringType, true)
-    .add("eventTime", TimestampType, true)
-    .add("attributes", StringType, true)
+  // --------- Common helpers ---------- //
 
-  // --------- Common Helpers ---------- //
   def getSparkSession: SparkSession =
     SparkSession
       .builder()
@@ -38,9 +20,8 @@ object Helpers {
       .master("local")
       .getOrCreate()
 
-  def readCsvFile(path: String, schema: StructType)(implicit spark: SparkSession): DataFrame =
+  def readCsvFile(path: String)(implicit spark: SparkSession): DataFrame =
     spark.read
-      .schema(schema)
       .options(Map("header" -> "true", "inferSchema" -> "true"))
       .csv(path)
 
@@ -163,7 +144,7 @@ def addSessionId(df: DataFrame)(implicit spark: SparkSession): DataFrame = {
     )
   }
 
-  def top10campaignWithoutSql(df: DataFrame)(implicit spark: SparkSession): DataFrame = {
+  def top10campaignWithOutSql(df: DataFrame)(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
 
     df.filter($"isConfirmed" === true)
@@ -179,7 +160,7 @@ def addSessionId(df: DataFrame)(implicit spark: SparkSession): DataFrame = {
   def popularChannelSql(df: DataFrame)(implicit spark: SparkSession): DataFrame = {
     df.createOrReplaceTempView("PurchasesAttributionProjection")
     spark.sql(  """
-      with wt_sessionQnt
+       with wt_sessionQnt
       as (
         Select campaignId, channelId,
                count(distinct(sessionId)) as sessionQnt
@@ -200,7 +181,7 @@ def addSessionId(df: DataFrame)(implicit spark: SparkSession): DataFrame = {
       """)
   }
 
-  def popularChannelWithoutSql(df: DataFrame)(implicit spark: SparkSession): DataFrame = {
+  def popularChannelWithOutSql(df: DataFrame)(implicit spark: SparkSession): DataFrame = {
     import spark.implicits._
     val window = Window.partitionBy($"campaignId").orderBy($"sessionQnt".desc)
     df.groupBy($"campaignId", $"channelId")

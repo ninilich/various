@@ -2,7 +2,8 @@
 .bsp
 
 src/main/resources/
-project/
+project/*
+!project/build.properties
 target/
 spark-warehouse/
 output/

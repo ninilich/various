@@ -1,0 +1,19 @@
+userId,eventId,eventType,eventTime,attributes
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,3fce7a72-6aa5-4a81-90a2-2060bd003bf4,app_open,2020-12-13 15:37:31,"{'campaign_id': 332, 'channel_id': 'Facebook Ads'}"
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,b49802f8-62a6-4248-ad48-3b5a0ac36ac3,search_product,2020-12-13 15:45:34,
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,08b51fee-d62d-4b21-9352-0df7909e4560,view_product_details,2020-12-13 15:48:07,
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,bdde7a28-c32d-4770-bb6a-0760339cf83d,purchase,2020-12-13 16:00:20,{'purchase_id': 'e3e70682-c209-4cac-a29f-6fbed82c07cd'}
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,be7741d8-56c9-47cb-896f-621d8d68027c,app_close,2020-12-13 16:04:20,
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,ee2c31f1-d02c-4bac-80d4-2131e7f391c5,app_open,2020-12-26 08:09:50,"{'campaign_id': 859, 'channel_id': 'VK Ads'}"
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,2a2fa632-8f20-42c7-b5e6-07afc38b2b9f,search_product,2020-12-26 08:16:23,
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,80566831-4bfb-4035-b4e1-67029aea04cd,view_product_details,2020-12-26 08:17:42,
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,d5c07ef5-f43d-4c9c-95d7-aa078f59e061,purchase,2020-12-26 08:35:13,{'purchase_id': '82e2e662-f728-44fa-8248-5e3a0a5d2f34'}
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,8d831f0e-25c0-4429-ad8c-3305b6d78502,app_close,2020-12-26 08:37:13,
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,69e2b6a7-a1b7-4480-962c-bf9b496d171d,app_open,2020-11-20 21:13:24,"{'campaign_id': 478, 'channel_id': 'Twitter Ads'}"
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,bb5cb100-8b4f-4585-bc36-b8081da92424,search_product,2020-11-20 21:19:44,
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,988575e4-cbb1-4283-8402-2e3f3e503817,view_product_details,2020-11-20 21:21:31,
+f6e8252f-b5cc-48a4-b348-29d89ee4fa9e,01bb372f-9403-4bff-a171-d7ab9aaff6b5,purchase,2020-11-20 21:32:23,{'purchase_id': 'd4713d60-c8a7-4639-ab11-67b367a9c378'}
+ba192cc2-f3e8-4871-9024-426da37bfafc,131baa88-6a71-495b-bbd4-10bea38de9ed,app_open,2020-11-04 09:47:37,"{'campaign_id': 559, 'channel_id': 'Twitter Ads'}"
+ba192cc2-f3e8-4871-9024-426da37bfafc,05ef7b9c-4c10-4f3c-87fd-743b6b389227,search_product,2020-11-04 09:55:58,
+ba192cc2-f3e8-4871-9024-426da37bfafc,b6bb4a8e-47ae-4b92-b15b-62b7f2330e9a,view_product_details,2020-11-04 09:59:39,
+ba192cc2-f3e8-4871-9024-426da37bfafc,26d91f6e-89c2-48c0-890a-83f2ba08d2f3,purchase,2020-11-04 10:01:00,{'purchase_id': '9558867f-5ba9-4faf-ba02-4204f7c1bd87'}
