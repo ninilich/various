@@ -1,6 +1,4 @@
-# Capstone project
-
-## Introduction
+# Introduction
 
 BigData Tasks: Marketing Analytics
 
@@ -26,7 +24,7 @@ app_open
  app_close
 ```
 
-### Task #1:
+## Task #1:
 
 Build Purchases Attribution Projection. The projection is dedicated to enabling a subsequent analysis of marketing campaigns and channels. 
 
@@ -47,7 +45,7 @@ Requirements for implementation of the projection building logic:
 - Task 1.1: Implement it by utilizing default Spark SQL capabilities.
 - Task 1.1: Implement it by using a custom Aggregator
 
-#### Task #2:
+## Task #2:
 Calculate Marketing Campaigns And Channels Statistics: 
  - Top Campaigns:  What are the Top 10 marketing campaigns that bring the biggest revenue (based on billingCost of confirmed purchases)?
  - Channels engagement performance: What is the most popular (i.e. Top) channel that drives the highest amount of unique sessions (engagements)  with the App in each campaign?
@@ -59,7 +57,9 @@ Requirements for task #2:
 Full task description you can find [here](
 https://docs.google.com/document/d/e/2PACX-1vTnYKo-FpJQ2GL_YgVIfZeTMiu5bnnH-aTbBaOyxdzl43T2zm5nhe4YYPd7c44xItTk8Ot8teVfuFqf/pub)
 
-## Solution (local run)
+# Solution 
+
+## Local run
 
 1. Generate dataset - see [this repo](https://github.com/gridu/INTRO_SPARK-SCALA_FOR_STUDENTS) and follow instructions there.
 2. Compile and run main-method 
@@ -86,7 +86,8 @@ Output data will be saved in outputPath:
 * Task 2.2 - folder "popularChannelSql" and "popularChannelWithOutSql"
 
 
-## Solution (Dataproc run)
+## Dataproc run
+
 1. Open Google Cloud shell and run script [GCP-prepare.sh]()
 2. Package project and upload output jar-file "example-project_2.12-0.1.jar" to Coogle Cloud Storage bucket 
 3. Run Spark job
