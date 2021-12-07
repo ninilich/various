@@ -96,7 +96,7 @@ Output data will be saved in outputPath:
 
 ## Dataproc run
 
-1. Open Google Cloud shell and run script [GCP-prepare.sh]()
+1. Open Google Cloud shell and run script [GCP-prepare.sh](GCP-prepare.sh)
 2. Package project and upload output jar-file "example-project_2.12-0.1.jar" to Coogle Cloud Storage bucket 
 3. Run Spark job
    ```
