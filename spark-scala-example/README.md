@@ -18,10 +18,10 @@ attributes: Option[Map[String, String]]
    - event types:
 ```
 app_open
- search_product
- view_product_details
- purchase 
- app_close
+search_product
+view_product_details
+purchase 
+app_close
 ```
 
 ## Task #1:
