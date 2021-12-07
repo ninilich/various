@@ -57,6 +57,14 @@ Requirements for task #2:
 Full task description you can find [here](
 https://docs.google.com/document/d/e/2PACX-1vTnYKo-FpJQ2GL_YgVIfZeTMiu5bnnH-aTbBaOyxdzl43T2zm5nhe4YYPd7c44xItTk8Ot8teVfuFqf/pub)
 
+## General requirements
+
+The requirements that apply to all tasks:
+- Use Spark version 2.4.5 or higher
+- The logic should be covered with unit tests
+- The output should be saved as PARQUET files.
+- Configurable input and output for both tasks
+
 # Solution 
 
 ## Local run
